@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
-    "target": "ES2015",
-    "lib": ["ES2015", "DOM"]
-   }
-   }
+      "module": "commonjs",
+      "target": "es6",
+      "lib": ["es6"],
+      "types": ["node"],
+      "moduleResolution": "node"
+    }
+  }
+  
