@@ -1,11 +1,12 @@
 import * as readline from 'readline';
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+
 
 function main(){
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+      });
 
     rl.question('Введите ваш возраст: ', (input: string) => {
         rl.close();
@@ -26,4 +27,17 @@ function main(){
         }
     });
 }
-main();
+// main();
+
+function calculate(num1: number, num2: number, oper: string): number{
+    const operators: string = '+-*/'
+    switch (operators.indexOf(oper)){
+        case 0: return num1+num2;
+        case 1: return num1-num2;
+        case 2: return num1*num2;
+        case 3: return num1/num2;
+        default: return 0
+    }
+}
+
+console.log(calculate(4, 5, '*'))

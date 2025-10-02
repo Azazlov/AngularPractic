@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 function main() {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
     rl.question('Введите ваш возраст: ', (input) => {
         rl.close();
         // let age: number = Math.floor(Math.random()*100); 
@@ -22,4 +22,15 @@ function main() {
         }
     });
 }
-main();
+// main();
+function calculate(num1, num2, oper) {
+    const operators = '+-*/';
+    switch (operators.indexOf(oper)) {
+        case 0: return num1 + num2;
+        case 1: return num1 - num2;
+        case 2: return num1 * num2;
+        case 3: return num1 / num2;
+        default: return 0;
+    }
+}
+console.log(calculate(4, 5, '*'));
