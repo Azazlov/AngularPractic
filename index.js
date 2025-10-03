@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const readline = require("readline");
 class DZ {
     constructor() { }
-    main() {
+    typeFunction() {
         const rl = readline.createInterface({
             input: process.stdin,
             output: process.stdout
@@ -24,7 +24,7 @@ class DZ {
             }
         });
     }
-    calculate(num1, num2, oper) {
+    function(num1, num2, oper) {
         const operators = '+-*/';
         switch (operators.indexOf(oper)) {
             case 0: return num1 + num2;
@@ -70,7 +70,6 @@ class DZ {
         let sortedProducts = inStockProducts.sort((price1, price2) => price1.price - price2.price);
         console.log(`Отсортированные по цене товары в наличии: `);
         console.log(sortedProducts);
-        console.log(inStockProducts.length, productsPrice.length);
     }
 }
 const domashka = new DZ;
