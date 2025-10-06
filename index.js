@@ -71,6 +71,18 @@ class DZ {
         console.log(`Отсортированные по цене товары в наличии: `);
         console.log(sortedProducts);
     }
+    async dataFetch() {
+        let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        let users = await response.json();
+        let usersId = [];
+        for (let i = 0; i < users.length; i++) {
+            if (!usersId.includes(users[i].userId)) {
+                usersId.push(users[i].userId);
+            }
+        }
+        console.log(usersId);
+    }
 }
 const domashka = new DZ;
-domashka.arrayObject();
+// domashka.arrayObject()
+domashka.dataFetch();
