@@ -8,4 +8,4 @@ export interface MenuItem {
     parentItem: number | null;
     showSubMenu?: boolean | null;
     subMenuItems?: MenuItem[] | null;
-}
+  }

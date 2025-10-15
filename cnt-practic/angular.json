@@ -97,6 +97,5 @@
   },
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "cnt-practic"
+  }
 }
