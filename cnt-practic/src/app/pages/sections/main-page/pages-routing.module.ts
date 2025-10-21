@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminPageComponent } from 'src/app/modules/administration/pages/admin-page/admin-page.component';
 import { PagesComponent } from '../../pages.component';
 import { MainPageComponent } from './main-page.component';
+import { NewsPageComponent } from 'src/app/modules/administration/pages/news-page/news-page.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'administration',
          loadChildren: () => import('../../../modules/administration/administration.module').then(module => module.AdministrationModule)
+      },
+      {
+        path: 'news',
+         component: NewsPageComponent
       },
       {
         path: '',

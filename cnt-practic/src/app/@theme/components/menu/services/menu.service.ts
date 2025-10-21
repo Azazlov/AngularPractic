@@ -57,7 +57,7 @@ export class MenuService {
     {
       idItem: 51,
       itemName: 'Статистика',
-      itemLink: 'dashboard',
+      itemLink: 'statistic',
       iconTypeId: 1,
       icon: '',
       itemOrder: 3,
@@ -66,6 +66,17 @@ export class MenuService {
       subMenuItems: []
     },
 
+    {
+      idItem: 52,
+      itemName: 'Новости',
+      itemLink: 'news',
+      iconTypeId: 1,
+      icon: '',
+      itemOrder: 3,
+      parentItem: 5,
+      showSubMenu: false,
+      subMenuItems: []
+    },
 
     {
       idItem: 7,

@@ -4,11 +4,13 @@ import { UsersPageComponent } from './pages/users-page/users-page.component';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { FormsModule } from '@angular/forms';
 import { AdministrationRoutingModule } from './administation-routing';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 @NgModule({
   declarations: [
     AdminPageComponent,
-    UsersPageComponent
+    UsersPageComponent,
+    NewsPageComponent
   ],
 
   imports: [
