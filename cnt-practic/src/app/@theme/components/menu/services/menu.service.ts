@@ -41,6 +41,17 @@ export class MenuService {
       showSubMenu: false,
       subMenuItems: []
     },
+    {
+      idItem: 32,
+      itemName: 'По проекту',
+      itemLink: 'mainPage/project',
+      iconTypeId: 1,
+      icon: null,
+      itemOrder: null,
+      parentItem: 51,
+      showSubMenu: false,
+      subMenuItems: []
+    },
 
     {
       idItem: 5,
@@ -57,7 +68,7 @@ export class MenuService {
     {
       idItem: 51,
       itemName: 'Статистика',
-      itemLink: 'statistic',
+      itemLink: 'dashboard',
       iconTypeId: 1,
       icon: '',
       itemOrder: 3,
@@ -66,17 +77,6 @@ export class MenuService {
       subMenuItems: []
     },
 
-    {
-      idItem: 52,
-      itemName: 'Новости',
-      itemLink: 'news',
-      iconTypeId: 1,
-      icon: '',
-      itemOrder: 3,
-      parentItem: 5,
-      showSubMenu: false,
-      subMenuItems: []
-    },
 
     {
       idItem: 7,

@@ -11,7 +11,11 @@ import { MenuParentsComponent } from './@theme/components/menu/components/menu-p
 import { MenuChildrensComponent } from './@theme/components/menu/components/menu-childrens/menu-childrens.component';
 import { ThemeSwitcherComponent } from './@theme/components/header/theme-switcher/theme-switcher.component';
 import { MainPageComponent } from './pages/sections/main-page/main-page.component';
-// import { AdminPageComponent } from './modules/administration/pages/admin-page/admin-page.component';
+
+
+
+import { SharedModule } from '../app/domains/modules/shared/shared.module';
+
 
 
 @NgModule({
@@ -25,12 +29,14 @@ import { MainPageComponent } from './pages/sections/main-page/main-page.componen
     MenuChildrensComponent,
     ThemeSwitcherComponent,
     MainPageComponent,
-    // AdminPageComponent,
+
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

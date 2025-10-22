@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminPageComponent } from 'src/app/modules/administration/pages/admin-page/admin-page.component';
-import { PagesComponent } from '../../pages.component';
-import { MainPageComponent } from './main-page.component';
-import { NewsPageComponent } from 'src/app/modules/administration/pages/news-page/news-page.component';
+import { MainPageComponent } from './sections/main-page/main-page.component';
+import { PagesComponent } from './pages.component';
+import { RizhiComponentComponent } from '../modules/administration/pages/users-page/component/rizhi-component/rizhi-component.component';
 
 const routes: Routes = [
   {
@@ -16,12 +15,13 @@ const routes: Routes = [
       },
       {
         path: 'administration',
-         loadChildren: () => import('../../../modules/administration/administration.module').then(module => module.AdministrationModule)
+         loadChildren: () => import('../modules/administration/administration.module').then(module => module.AdministrationModule)
       },
       {
-        path: 'news',
-         component: NewsPageComponent
+        path: 'mainPage/project',
+        component: RizhiComponentComponent
       },
+
       {
         path: '',
         redirectTo: 'mainPage',
