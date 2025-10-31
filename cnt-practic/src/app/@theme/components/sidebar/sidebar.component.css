@@ -5,7 +5,7 @@ aside {
     position: sticky;
     overflow: hidden;
     width: 47px;
-    height: 100vh;
+    height: 100%;
     padding: 10px 0;
     background: var(--block-background);
     border-right: 1px solid var(--block-border-color);
